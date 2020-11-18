@@ -3,10 +3,10 @@
 Este projeto contempla um exemplo de consulta à API Entrepontos para a agência Contém. 
 
 ### Responsáveis:
-- Backend: Fabio
-- Frontend: Eduardo
-- GP: Humberto
-- Atendimento: Ana Carol
+- **Backend**: *Fabio*
+- **Frontend**: *Eduardo*
+- **GP**: *Humberto*
+- **Atendimento**: *Ana Carol*
 
 ## Instalação
 
@@ -37,7 +37,7 @@ consulta.php - alvo do action do form, com os processos de consumo da API;
 |since|Data/Hora da criação do registro|2020-07-13T12:35:00.000-03:00|
 |start|ID de ocorrência(inicial)|1|
 |invoice_key|Obtém apenas as ocorrências da NF especificada|35151000210903000105550000000010171764911610|
-|cte_key|Obtém apenas as ocorrências do CT-eespecificado|35190327840760000163570010000071061945400000|
+|cte_key|Obtém apenas as ocorrências do CT-e especificado|35190327840760000163570010000071061945400000|
 |manifest_id|Obtém apenas as ocorrências do Manifesto especificado|1|
 |occurrence_code|Obtém apenas as ocorrências do tipo especificado pelo código|1|
 
