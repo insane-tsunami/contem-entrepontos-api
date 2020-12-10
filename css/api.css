@@ -1,0 +1,12 @@
+select, input.api_form {
+    width: 200px;
+    border: solid 1px #dadada !important;
+    background-color: #ededed !important;
+    color: #777;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+.button_api {
+    padding: 8px 30px !important;
+    font-size: 16px;
+}

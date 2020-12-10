@@ -1,0 +1,25 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+
+
+#geral #bg{
+background:url(imgs/vanessaV.jpg) no-repeat;
+width:315px;
+height:129px;
+
+}
+
+a{ color:#CC0000;
+text-decoration:none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+margin-left:20px;
+}
+a:hover{ color:#CC0000;
+} 
+a:visited{ color:#CC0000;
+}

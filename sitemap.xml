@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://entrepontos.com.br/</loc>
+  <lastmod>2012-08-10T14:29:08+00:00</lastmod>
+</url>
+<url>
+  <loc>http://entrepontos.com.br/index.html</loc>
+  <lastmod>2012-08-10T14:29:08+00:00</lastmod>
+</url>
+<url>
+  <loc>http://entrepontos.com.br/empresa.html</loc>
+  <lastmod>2012-08-08T20:38:38+00:00</lastmod>
+</url>
+<url>
+  <loc>http://entrepontos.com.br/servicos.html</loc>
+  <lastmod>2012-08-08T20:10:46+00:00</lastmod>
+</url>
+<url>
+  <loc>http://entrepontos.com.br/cotacao.php</loc>
+</url>
+<url>
+  <loc>http://entrepontos.com.br/rastreamento.php</loc>
+</url>
+<url>
+  <loc>http://entrepontos.com.br/contato.php</loc>
+</url>
+</urlset>
