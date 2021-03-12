@@ -19,12 +19,8 @@
         <p>
             <label for="parametro" class="labelParametro">parametro: </label>
             <select name="parametro" id="parametro" class="parametro" multiple="multiple">
-                <option value="since">since</option>
-                <option value="start">start</option>
                 <option value="invoice_key">invoice_key</option>
                 <option value="cte_key">cte_key</option>
-                <option value="manifest_id">manifest_id</option>
-                <option value="occurrence_code">occurrence_code</option>
             </select>
 
         </p>
