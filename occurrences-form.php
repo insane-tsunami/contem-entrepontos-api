@@ -26,12 +26,19 @@
                 <option value="manifest_id">manifest_id</option>
                 <option value="occurrence_code">occurrence_code</option>
             </select>
-
         </p>
 
         <p>
             <label for="valor">valor do parametro: </label>
             <input type="text" name="valor" id="valor" class="valor">
+        </p>
+
+        <p>
+            <label for="tipo">tipo de retorno: </label>
+            <input type="radio" name="tipo" id="tipo" value="json">
+            <label for="json">json</label>
+            <input type="radio" name="tipo" id="tipo" value="html" checked="checked">
+            <label for="html">html</label>
         </p>
 
         <p>
