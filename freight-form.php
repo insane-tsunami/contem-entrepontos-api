@@ -31,6 +31,14 @@
         </p>
 
         <p>
+            <label for="tipo">tipo de retorno: </label>
+            <input type="radio" name="tipo" id="tipo" value="json">
+            <label for="json">json</label>
+            <input type="radio" name="tipo" id="tipo" value="html" checked="checked">
+            <label for="html">html</label>
+        </p>
+
+        <p>
             <label for="enviar"></label>
             <button type="submit">enviar</button>
         </p>
