@@ -1,6 +1,6 @@
 # Consulta - API Entrepontos
 
-Este projeto contempla um exemplo de consulta à API Entrepontos para a agência Contém.
+Este projeto contempla exemplos de consulta à API TMS pela Entrepontos com retornos em formato JSON ou HTML com o resultado em uma tag `<TABLE>`.
 
 ## Responsáveis
 
@@ -27,13 +27,13 @@ Siga as instruções em: [https://getcomposer.org/doc/00-intro.md#installation-l
 
 Siga as instruções em: [http://getcomposer.org/doc/00-intro.md#installation-windows](http://getcomposer.org/doc/00-intro.md#installation-windows)
 
-## Uso do exemplos
+## Uso dos exemplos
 
 ### Ocorrências
 
 ```bash
-/occurrences-form.php - formulário com os campos para token e os parâmetros de consulta de ocorrências;
-/occurrences-api.php - consumo da api de ocorrências com os parâmetros fornecidos no formulário;
+occurrences-form.php - formulário com os campos para token e os parâmetros de consulta de ocorrências;
+occurrences-api.php - consumo da api de ocorrências com os parâmetros fornecidos no formulário;
 ```
 
 ### Parâmetros para consulta de ocorrências
@@ -50,8 +50,8 @@ Siga as instruções em: [http://getcomposer.org/doc/00-intro.md#installation-wi
 ### Comprovantes de entrega
 
 ```bash
-/freight-form.php - formulário com os campos para token e os parâmetros de consulta de comprovantes;
-/freight-api.php - consumo da api de comprovantes com os parâmetros fornecidos no formulário;
+freight-form.php - formulário com os campos para token e os parâmetros de consulta de comprovantes;
+freight-api.php - consumo da api de comprovantes com os parâmetros fornecidos no formulário;
 ```
 
 ### Parâmetros para consulta de comprovantes de entrega
