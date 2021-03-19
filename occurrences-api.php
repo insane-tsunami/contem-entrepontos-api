@@ -12,7 +12,7 @@ foreach ($_POST as $name => $value) {
 if(isset($token) && strlen($token) > 0){
     $accessToken = $token;
 } else {
-    $accessToken = "5f8a9dfb8f20fee3752de75b76e7663a"; // token default da Contém
+    $accessToken = "neWzBjexSxtsieQ1mv_esjPzG7s1mLCYTz_exX4cJ8AxA3it3YL2Vg"; // token entrepontos
 }
 
 $client = new Client([
