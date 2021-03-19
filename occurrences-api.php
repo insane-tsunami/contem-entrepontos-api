@@ -27,13 +27,13 @@ $headers = [
 if (isset($parametro)) {
     $request = new Request(
         "GET",
-        "api/customer/invoice_occurrences?$parametro=$valor",
+        "api/invoice_occurrences?$parametro=$valor",
         $headers
     );
 } else{
     $request = new Request(
         "GET",
-        "api/customer/invoice_occurrences",
+        "api/invoice_occurrences",
         $headers
     );
 }
