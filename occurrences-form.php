@@ -23,8 +23,11 @@
                 <option value="start">start</option>
                 <option value="invoice_key">invoice_key</option>
                 <option value="cte_key">cte_key</option>
+                <option value="reference_number">reference_number</option>
                 <option value="manifest_id">manifest_id</option>
                 <option value="occurrence_code">occurrence_code</option>
+                <option value="recipient_document">recipient_document</option>
+                <option value="invoice_number">invoice_number</option>
             </select>
         </p>
 
