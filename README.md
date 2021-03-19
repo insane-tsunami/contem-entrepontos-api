@@ -44,8 +44,11 @@ occurrences-api.php - consumo da api de ocorrências com os parâmetros fornecid
 |start|ID de ocorrência(inicial)|1|
 |invoice_key|Obtém apenas as ocorrências da NF especificada|35151000210903000105550000000010171764911610|
 |cte_key|Obtém apenas as ocorrências do CT-e especificado|35190327840760000163570010000071061945400000|
+|reference_number|Obtém apenas as ocorrências do frete com o numero de referencia especificado|
 |manifest_id|Obtém apenas as ocorrências do Manifesto especificado|1|
 |occurrence_code|Obtém apenas as ocorrências do tipo especificado pelo código|1|
+|recipient_document|Obtém todas as ocorrências das notas fiscais onde o destinatário foi informado neste campo|
+|invoice_number|Obtém apenas as ocorrências do número da nota fiscal especificada|
 
 ### Comprovantes de entrega
 
