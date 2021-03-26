@@ -9,16 +9,20 @@
 	<div style="width:100%; padding: 35px; text-align:center">
     	<h2 style="font-family: 'Montserrat', Arial; color: #d82029; font-weight: 600">PREENCHA OS CAMPOS ABAIXO</h2>
 		<p>
-		<form name="formulario" id="formulario" action="consultaHtml.php" method="post">
+		<form name="formulario" id="formulario" action="freight-api.php" method="post">
+
+			<input type="text" name="recipient_document" id="" class="api_form" placeholder="INSIRA O CPF OU CNPJ">
+
 			<select name="parametro" id="parametro" class="parametro">
-                <option value="invoice_key">BUSCAR POR NOTA</option>
-                <option value="cte_key">BUSCAR POR CTE</option>
-            </select>
+				<option>TIPO DE RASTREAMENTO</option>
+				<option value="invoice_number">NOTA</option>
+				<option value="cte_key">CHAVE DO CTE</option>
+			</select>
+
 			<input type="text" name="valor" id="valor" class="api_form" placeholder="INSIRA O NÚMERO">
-			<input type="text" name="token" id="token" class="api_form" placeholder="TOKEN">
-		</p>
-			<button  class="button huge round red button_api">Verificar</button>
-		<P>
+			<p style="margin-top: 15px;">
+			<button  class="button huge round red button_api">RASTREAR</button>
+			</p>
 		</form>
 		</P>
 	</div>

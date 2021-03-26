@@ -1,49 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include "header.php";?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fretes</title>
-</head>
+	<div class="inner-page-intro">
+		<h4>Rastreamento de remesas</h4>
+	</div>
 
-<body>
+	<img src="images/api/banner_rastreamento.jpg" width="1000" height="350" class="img-responsive" />
 
-    <form name="formulario" id="formulario" action="freight-api.php" method="post">
+	<div style="width:100%; padding: 35px; text-align:center">
+    	<h2 style="font-family: 'Montserrat', Arial; color: #d82029; font-weight: 600">RASTREIE AQUI A SUA ENCOMENDA</h2>
+		<P style="font-family: Arial; font-size: 13px; color: #777; font-weight: 600">PREENCHA OS CAMPOS ABAIXO E ACOMPANHE O STATUS DA SUA ENCOMENDA</P>
+		<p>
+			<form name="formulario" id="formulario" action="freight-api.php" method="post">
 
-        <p>
-            <label for="token" class="labelToken">token de acesso: </label>
-            <input type="text" name="token" id="token" class="token">
-        </p>
+				<input type="text" name="recipient_document" id="" class="api_form" placeholder="INSIRA O CPF OU CNPJ">
 
-        <p>
-            <label for="parametro" class="labelParametro">parametro: </label>
-            <select name="parametro" id="parametro" class="parametro" multiple="multiple">
-                <option value="invoice_key">invoice_key</option>
-                <option value="cte_key">cte_key</option>
-            </select>
+				<select name="parametro" id="parametro" class="parametro">
+					<option>TIPO DE RASTREAMENTO</option>
+					<option value="invoice_number">NOTA</option>
+					<option value="cte_key">CHAVE DO CTE</option>
+				</select>
 
-        </p>
+				<input type="text" name="valor" id="valor" class="api_form" placeholder="INSIRA O NÚMERO">
+				<p style="margin-top: 15px;">
+				<button  class="button huge round red button_api">RASTREAR</button>
+				</p>
+			</form>
+		</P>
+	</div>
 
-        <p>
-            <label for="valor">valor do parametro: </label>
-            <input type="text" name="valor" id="valor" class="valor">
-        </p>
-
-        <p>
-            <label for="tipo">tipo de retorno: </label>
-            <input type="radio" name="tipo" id="tipo" value="json">
-            <label for="json">json</label>
-            <input type="radio" name="tipo" id="tipo" value="html" checked="checked">
-            <label for="html">html</label>
-        </p>
-
-        <p>
-            <label for="enviar"></label>
-            <button type="submit">enviar</button>
-        </p>
-    </form>
-
-</body>
-
-</html>
+<?php include "footer.php";?>

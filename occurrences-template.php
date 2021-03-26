@@ -7,48 +7,10 @@ $occurrences_data = json_decode($_SESSION['occurrences_data'], true);
 <div class="inner-page-intro">
     <h4>Rastreamento de remesas</h4>
 </div>
-
-<?php
-//     [id] => 15254467
-//     [receiver] => Luiz liberato 
-//     [document_number] => 
-//     [comments] => 
-//     [occurrence_at] => 2020-12-23T08:53:00.000-03:00
-//     [user_id] => 7512
-//     [creator_user_id] => 7512
-//     [created_at] => 2020-12-28T08:53:43.225-03:00
-//     [updated_at] => 2020-12-28T08:53:43.225-03:00
-//     [invoice] => Array
-//         (
-//             [id] => 5732463
-//             [key] => 35201204001305000179550010001202941705560147
-//             [series] => 1
-//             [number] => 120294
-//             [type] => Invoice::Nfe
-//         )
-//     [freight] => Array
-//         (
-//             [id] => 3403081
-//             [cte_number] => 471
-//             [cte_key] => 35201204142031000138570920000004711387978948
-//             [reference_number] => 
-//             [draft_number] => 
-//             [delivery_prediction_at] => 2020-12-17T08:50:00.000-03:00
-//         )
-//     [occurrence] => Array
-//         (
-//             [id] => 9342
-//             [trigger] => finish
-//             [code] => 1
-//             [description] => Entrega/Coleta Realizada Normalmente
-//         )
-//     [manifest] => 
-?>
-
 <img src="images/api/banner_rastreamento.jpg" width="1000" height="350" class="img-responsive" />
 
 <div style="width:100%; padding: 35px; text-align:center">
-    <h2 style="font-family: 'Montserrat', Arial; color: #d82029; font-weight: 600">RESULTADO DA BUSCA</h2>
+    <h2 style="font-family: 'Montserrat', Arial; color: #d82029; font-weight: 600">RESULTADO DO RASTREAMENTO</h2>
     <?php foreach ($occurrences_data['data'] as $occurrence) : ?>
         <hr width="100%">
         <h2 style="font-family: Helvetica, Arial, sans-serif; text-align:left; padding-top: 20px; margin-bottom: 5px">OCORRÊNCIA</h2>
@@ -72,6 +34,7 @@ $occurrences_data = json_decode($_SESSION['occurrences_data'], true);
         </ul>
     <?php endforeach; ?>
     <hr width="100%">
+    <p style="margin-top: 20px;"> <a href="occurrences-form.php" class="button huge round red button_api">VOLTAR</a></p>
 </div>
 
 <?php include "footer.php"; ?>

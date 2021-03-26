@@ -60,7 +60,7 @@
 
 			            <li><a href="cotacao.php" title="Cotação e Coleta" <?php if($URL == "cotacao.php"){ echo 'class="ativo"'; } ?>>Cotação e Coleta</a></li>
 
-			            <li><a href="rastreamento.php" title="Rastreamento" <?php if($URL == "rastreamento.php"){ echo 'class="ativo"'; } ?>>Rastreamento</a></li>
+			            <li><a href="rastreamento/api/occurrences-form.php" title="Rastreamento" <?php if($URL == "rastreamento/api/occurrences-form.php"){ echo 'class="ativo"'; } ?>>Rastreamento</a></li>
 
 						<li><a href="contato.php" title="Contato" <?php if($URL == "contato.php"){ echo 'class="ativo"'; } ?>>Contato</a></li>
 					</ul>

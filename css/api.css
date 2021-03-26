@@ -1,5 +1,6 @@
 select, input.api_form {
-    width: 200px;
+    width: 250px;
+    height: 35px;
     border: solid 1px #dadada !important;
     background-color: #ededed !important;
     color: #777;
