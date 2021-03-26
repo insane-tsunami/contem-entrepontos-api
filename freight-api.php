@@ -58,8 +58,10 @@ if (isset($tipo) && $tipo == 'json') {
     header("Content-type: application/json; charset=UTF-8");
     print $return;
 } else {
-    header("Content-type: text/html; charset=UTF-8");
-    echo jsonToTable(json_decode($return));
+    session_start();
+    $_SESSION["freight_data"] = $return;
+    header("Location: freight-template.php");
+    die();
 }
 
 return;

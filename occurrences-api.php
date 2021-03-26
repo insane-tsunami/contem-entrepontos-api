@@ -9,7 +9,7 @@ foreach ($_POST as $name => $value) {
     $$name = htmlspecialchars($value);
 }
 
-if(isset($token) && strlen($token) > 0){
+if (isset($token) && strlen($token) > 0) {
     $accessToken = $token;
 } else {
     $accessToken = "neWzBjexSxtsieQ1mv_esjPzG7s1mLCYTz_exX4cJ8AxA3it3YL2Vg"; // token entrepontos
@@ -30,7 +30,7 @@ if (isset($parametro)) {
         "api/invoice_occurrences?$parametro=$valor",
         $headers
     );
-} else{
+} else {
     $request = new Request(
         "GET",
         "api/invoice_occurrences",
@@ -58,8 +58,10 @@ if (isset($tipo) && $tipo == 'json') {
     header("Content-type: application/json; charset=UTF-8");
     print $return;
 } else {
-    header("Content-type: text/html; charset=UTF-8");
-    echo jsonToTable(json_decode($return));
+    session_start();
+    $_SESSION["occurrences_data"] = $return;
+    header("Location: occurrences-template.php");
+    die();
 }
 
 return;
