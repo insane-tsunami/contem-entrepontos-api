@@ -2,12 +2,12 @@
 		<p>&copy;Todos os Direitos Reservados ® EntrePontos Express | <span><a style="color:#fdc513" href="http://www.agenciacontem.com.br/site" target="_blank" title="Home">Agência Contém</a></span></p>
 
 		<ul id="footer-links">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="empresa.html">Empresa</a></li>
-			<li><a href="servicos.html">Serviços</a></li>    
-			<li><a href="cotacao.php">Cotação e Coleta</a></li>  
-		    <li><a href="rastreamento.php">Rastreamento</a></li>  
-			<li><a href="contato.php">Contato</a></li>
+			<li><a href="http://www.entrepontos.com.br/">Home</a></li>
+			<li><a href="http://www.entrepontos.com.br/empresa.php">Empresa</a></li>
+			<li><a href="http://www.entrepontos.com.br/servicos.php">Serviços</a></li>    
+			<li><a href="http://www.entrepontos.com.br/cotacao.php">Cotação e Coleta</a></li>  
+		    <li><a href="http://www.entrepontos.com.br/rastreamento/api/occurrences-form.php">Rastreamento</a></li>  
+			<li><a href="http://www.entrepontos.com.br/contato.php">Contato</a></li>
 			<li><a href="#" class="backtotop">&uarr;</a></li>
 		</ul>
 	</div>
