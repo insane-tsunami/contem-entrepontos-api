@@ -24,19 +24,28 @@ $headers = [
     "Accept" => "application/json",
 ];
 
-if (isset($parametro)) {
-    $request = new Request(
-        "GET",
-        "api/freight_delivery_receipts?$parametro=$valor",
-        $headers
-    );
+$uri = "api/freight_delivery_receipts";
+
+if (strlen($recipient_document) > 0) {
+    if (strlen($parametro) > 0) {
+        $uri .= "?$parametro=$valor&recipient_document=$recipient_document";
+    } else {
+        $uri .= "?recipient_document=$recipient_document";
+    }
 } else {
-    $request = new Request(
-        "GET",
-        "api/freight_delivery_receipts",
-        $headers
-    );
+    if (strlen($parametro) > 0) {
+        $uri .= "?$parametro=$valor";
+    } else {
+        header("Location: freight-error.php");
+        die();
+    }
 }
+
+$request = new Request(
+    "GET",
+    $uri,
+    $headers
+);
 
 $testResponse = $client->request("GET", "/", ["http_errors" => false]);
 if ($testResponse->getStatusCode() == 200) {
@@ -54,13 +63,19 @@ if ($testResponse->getStatusCode() == 200) {
     }
 }
 
+$totalReturned = (json_decode($return))->paging->total;
+
 if (isset($tipo) && $tipo == 'json') {
     header("Content-type: application/json; charset=UTF-8");
     print $return;
 } else {
-    session_start();
-    $_SESSION["freight_data"] = $return;
-    header("Location: freight-template.php");
+    if ($totalReturned == 1) {
+        session_start();
+        $_SESSION["freight_data"] = $return;
+        header("Location: freight-template.php");
+    } else {
+        header("Location: freight-error.php");
+    }
     die();
 }
 

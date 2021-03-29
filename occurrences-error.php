@@ -11,6 +11,6 @@ include "header.php";
 
 <div style="width:100%; padding: 35px; text-align:center">
     <h2 style="font-family: 'Montserrat', Arial; color: #d82029; font-weight: 600">NÃO FOI ENCONTRADO NENHUM VALOR PARA ESSA BUSCA</h2>
-    <a href="api.php" class="button huge round red button_api">Verificar</a>
+    <a href="occurrences-form.php" class="button huge round red button_api">Verificar</a>
 
 <?php include "footer.php"; ?>
